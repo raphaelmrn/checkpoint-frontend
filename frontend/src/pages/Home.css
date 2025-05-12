@@ -1,0 +1,43 @@
+/* CountryGrid.css */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Par défaut, 2 colonnes */
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .country-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les écrans sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .country-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les écrans md */
+  }
+}
+
+.country-card {
+  border: 1px solid #e5e7eb; /* Bordure gris clair */
+  border-radius: 0.5rem; /* Bordure arrondie */
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none; /* Supprimer la décoration de lien */
+  color: inherit; /* Hériter de la couleur du texte */
+}
+
+.country-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus forte au survol */
+}
+
+.country-emoji {
+  font-size: 2.5rem; /* Taille de l'emoji */
+}
+
+.country-name {
+  margin-top: 0.5rem;
+  font-weight: 500; /* Texte en semi-gras */
+}

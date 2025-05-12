@@ -1,0 +1,45 @@
+/* AddCountry.css */
+.form-container {
+  padding: 2rem;
+}
+
+.form-title {
+  font-size: 1.5rem; /* Taille du titre */
+  font-weight: 600; /* Texte en semi-gras */
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacement entre les éléments du formulaire */
+  max-width: 400px; /* Limiter la largeur du formulaire */
+  margin: 0 auto; /* Centrer le formulaire */
+}
+
+.form-input {
+  border: 1px solid #e5e7eb; /* Bordure gris clair */
+  padding: 0.5rem;
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+  border-radius: 0.5rem; /* Bordure arrondie */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ec4899; /* Changer la couleur de la bordure au focus */
+}
+
+.form-button {
+  background-color: #ec4899; /* Couleur rose de fond */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Padding vertical et horizontal */
+  border: none;
+  border-radius: 0.5rem; /* Bordure arrondie */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #db2777; /* Changer la couleur de fond au survol */
+}
